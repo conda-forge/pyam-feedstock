@@ -19,8 +19,9 @@ requirements:
     - python
     - pip
   run:
+    - argparse
     - numpy
-    - pandas >=0.21.0
+    - pandas >=0.21.0,!=0.24.0
     - pyyaml
     - xlrd
     - xlsxwriter
@@ -28,7 +29,10 @@ requirements:
     - seaborn
     - six
     - geopandas
+    - geopandas <0.5.0
     - cartopy
+    - gdal
+    - fiona
     - requests
 
 test:
