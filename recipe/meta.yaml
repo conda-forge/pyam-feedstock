@@ -28,7 +28,6 @@ requirements:
     - matplotlib
     - seaborn
     - six
-    - geopandas
     - geopandas <0.5.0
     - cartopy
     - gdal
@@ -38,6 +37,8 @@ requirements:
 test:
   imports:
     - pyam
+  commands:
+     python -c "import pyam; assert pyam.__version__ == '{{ version }}'"
 
 about:
   home: https://github.com/IAMconsortium/pyam
