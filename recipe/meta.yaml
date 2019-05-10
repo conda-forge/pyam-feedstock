@@ -28,7 +28,7 @@ requirements:
     - matplotlib
     - seaborn
     - six
-    - geopandas <0.5.0
+    - geopandas
     - cartopy
     - gdal
     - fiona
