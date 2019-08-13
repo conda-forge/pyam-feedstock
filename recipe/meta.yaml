@@ -1,5 +1,4 @@
 {% set version = "0.2.0" %}
-{% set sha256 = "993241429f6bb67d2831e5f89c178043f6a737c851da68acea109e080a211412" %}
 
 package:
   name: pyam
@@ -7,12 +6,12 @@ package:
 
 source:
   url: https://github.com/IAMconsortium/pyam/archive/v{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: f7bfadd75bf4fd33bd20102d5dc5635e4a00976a2a866062f84498062f847e75
 
 build:
   number: 1
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
