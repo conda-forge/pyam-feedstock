@@ -40,10 +40,23 @@ test:
      python -c "import pyam; assert pyam.__version__ == '{{ version }}'"
 
 about:
-  home: https://github.com/IAMconsortium/pyam
+  home: https://pyam-iamc.readthedocs.io/
   license: Apache-2.0
   license_file: LICENSE
-  summary: 'an open-source Python package for IAM scenario analysis and visualization https://pyam-iamc.readthedocs.io'
+  summary: 'a Python package for integrated-assessment scenario analysis and visualization'
+  description: |
+    The open-source Python package `pyam` provides a suite of tools and
+    functions for analyzing and visualizing input data
+    (i.e., assumptions/parametrization) and results (model output) of
+    integrated-assessment scenarios.
+    
+    # Key features:
+    - Simple analysis of timeseries data in the IAMC format with an interface
+      similar in feel and style to the widely used pandas.DataFrame
+    - Advanced visualization and plotting function
+    - Diagnostic checks for scripted validation of scenario data and results
+  doc_url: https://pyam-iamc.readthedocs.io/
+  dev_url: https://github.com/IAMconsortium/pyam
 
 extra:
   recipe-maintainers:
