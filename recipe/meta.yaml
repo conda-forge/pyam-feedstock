@@ -43,7 +43,7 @@ about:
   home: https://github.com/IAMconsortium/pyam
   license: Apache-2.0
   license_file: LICENSE
-  summary: 'an open-source Python package for IAM scenario analysis and visualization https://software.ene.iiasa.ac.at/pyam/'
+  summary: 'an open-source Python package for IAM scenario analysis and visualization https://pyam-iamc.readthedocs.io'
 
 extra:
   recipe-maintainers:
