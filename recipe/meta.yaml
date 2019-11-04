@@ -1,5 +1,5 @@
 {% set version = "0.3.0" %}
-{% set sha256 = "646e417fd961a84dcdb004e5dd02b134d090ec03e9b25407f064d779e888c9e3" %}
+{% set sha256 = "c12a072852322d5d94473cbe88c2b4947a19420dc602dc7ec2c511d5ec348e1f" %}
 
 package:
   name: pyam
