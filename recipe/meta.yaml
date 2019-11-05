@@ -27,10 +27,6 @@ requirements:
     - matplotlib
     - seaborn
     - six
-    - geopandas
-    - cartopy
-    - gdal
-    - fiona
     - requests
 
 test:
