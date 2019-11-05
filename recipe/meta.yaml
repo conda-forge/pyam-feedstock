@@ -1,5 +1,5 @@
 {% set version = "0.3.0" %}
-{% set sha256 = "646e417fd961a84dcdb004e5dd02b134d090ec03e9b25407f064d779e888c9e3" %}
+{% set sha256 = "cbf133318e8b0c8b33dd6aaa7b1fa95e3f12ace04b6d6ac56db663624df40a9b" %}
 
 package:
   name: pyam
@@ -27,10 +27,6 @@ requirements:
     - matplotlib
     - seaborn
     - six
-    - geopandas
-    - cartopy
-    - gdal
-    - fiona
     - requests
 
 test:
@@ -40,11 +36,25 @@ test:
      python -c "import pyam; assert pyam.__version__ == '{{ version }}'"
 
 about:
-  home: https://github.com/IAMconsortium/pyam
+  home: https://pyam-iamc.readthedocs.io/
   license: Apache-2.0
   license_file: LICENSE
-  summary: 'an open-source Python package for IAM scenario analysis and visualization https://software.ene.iiasa.ac.at/pyam/'
+  summary: 'a Python package for integrated-assessment scenario analysis and visualization'
+  description: |
+    The open-source Python package `pyam` provides a suite of tools and
+    functions for analyzing and visualizing input data
+    (i.e., assumptions/parametrization) and results (model output) of
+    integrated-assessment scenarios.
+    
+    # Key features:
+    - Simple analysis of timeseries data in the IAMC format with an interface
+      similar in feel and style to the widely used pandas.DataFrame
+    - Advanced visualization and plotting function
+    - Diagnostic checks for scripted validation of scenario data and results
+  doc_url: https://pyam-iamc.readthedocs.io/
+  dev_url: https://github.com/IAMconsortium/pyam
 
 extra:
   recipe-maintainers:
     - gidden
+    - danielhuppmann

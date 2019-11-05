@@ -7,7 +7,7 @@ Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: an open-source Python package for IAM scenario analysis and visualization https://software.ene.iiasa.ac.at/pyam/
+Summary: an open-source Python package for IAM scenario analysis and visualization https://pyam-iamc.readthedocs.io
 
 
 
