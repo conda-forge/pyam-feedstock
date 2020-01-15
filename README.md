@@ -1,14 +1,23 @@
 About pyam
 ==========
 
-Home: https://github.com/IAMconsortium/pyam
+Home: https://pyam-iamc.readthedocs.io/
 
 Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: an open-source Python package for IAM scenario analysis and visualization https://pyam-iamc.readthedocs.io
+Summary: a Python package for integrated-assessment scenario analysis and visualization
 
+The open-source Python package `pyam` provides a suite of tools and
+functions for analyzing and visualizing input data
+(i.e., assumptions/parametrization) and results (model output) of
+integrated-assessment scenarios.
+
+- Simple analysis of timeseries data in the IAMC format with an interface
+  similar in feel and style to the widely used pandas.DataFrame
+- Advanced visualization and plotting function
+- Diagnostic checks for scripted validation of scenario data and results
 
 
 Current build status
@@ -67,7 +76,7 @@ A feedstock is made up of a conda recipe (the instructions on what and how to bu
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
+and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
 packages to the [conda-forge](https://anaconda.org/conda-forge)
 [Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
@@ -116,5 +125,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@danielhuppmann](https://github.com/danielhuppmann/)
 * [@gidden](https://github.com/gidden/)
 
