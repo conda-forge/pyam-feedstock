@@ -28,6 +28,7 @@ requirements:
     - seaborn
     - six
     - requests
+    - pint
 
 test:
   imports:
