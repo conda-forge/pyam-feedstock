@@ -1,5 +1,5 @@
-{% set version = "0.4.1" %}
-{% set sha256 = "117b5ac8f2cf2274001f2cbc1d69e998e7ddfbc45f0b3b911c24886ed2fc1504" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "6a19f8d80865c919d20c7fe674c36a4dd54eac9aad51777d3c2c5a4c6dc63997" %}
 
 package:
   name: pyam
@@ -32,20 +32,19 @@ requirements:
 test:
   imports:
     - pyam
-  commands:
-     python -c "import pyam; assert pyam.__version__ == '{{ version }}'"
+  commands: python -c "import pyam; assert pyam.__version__ == '{{ version }}'"
 
 about:
   home: https://pyam-iamc.readthedocs.io/
   license: Apache-2.0
   license_file: LICENSE
-  summary: 'a Python package for integrated-assessment scenario analysis and visualization'
+  summary: a Python package for integrated-assessment scenario analysis and visualization
   description: |
     The open-source Python package `pyam` provides a suite of tools and
     functions for analyzing and visualizing input data
     (i.e., assumptions/parametrization) and results (model output) of
     integrated-assessment scenarios.
-    
+
     # Key features:
     - Simple analysis of timeseries data in the IAMC format with an interface
       similar in feel and style to the widely used pandas.DataFrame
