@@ -8,10 +8,6 @@ package:
 source:
   - url: https://github.com/IAMconsortium/pyam/archive/v{{ version }}.tar.gz
     sha256: {{ sha256 }}
-  # GitHub does not include submodules in the release archives,
-  # so get the latest version of the units repository directly
-  - git_url: https://github.com/IAMconsortium/units
-    folder: units
   
 
 build:
@@ -27,13 +23,11 @@ requirements:
     - numpy
     - pandas
     - pyyaml
-    - xlrd
-    - xlsxwriter
     - matplotlib-base
     - seaborn
     - six
     - requests
-    - pint
+    - iam-units
 
 test:
   imports:
