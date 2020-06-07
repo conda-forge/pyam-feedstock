@@ -1,5 +1,5 @@
-{% set version = "0.5.0" %}
-{% set sha256 = "6a19f8d80865c919d20c7fe674c36a4dd54eac9aad51777d3c2c5a4c6dc63997" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "a09a13ae0a52249eee85c63ab250fa230fb8d1b16f25d7f018bd61e7612d03fe" %}
 
 package:
   name: pyam
@@ -8,14 +8,10 @@ package:
 source:
   - url: https://github.com/IAMconsortium/pyam/archive/v{{ version }}.tar.gz
     sha256: {{ sha256 }}
-  # GitHub does not include submodules in the release archives,
-  # so get the latest version of the units repository directly
-  - git_url: https://github.com/IAMconsortium/units
-    folder: units
   
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -27,13 +23,11 @@ requirements:
     - numpy
     - pandas
     - pyyaml
-    - xlrd
-    - xlsxwriter
     - matplotlib-base
     - seaborn
     - six
     - requests
-    - pint
+    - iam-units
 
 test:
   imports:
