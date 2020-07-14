@@ -28,6 +28,9 @@ requirements:
     - six
     - requests
     - iam-units
+    - xlrd
+    - openpyxl
+    - datapackage
 
 test:
   imports:
