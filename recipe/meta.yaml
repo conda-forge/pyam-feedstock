@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://github.com/IAMconsortium/pyam/archive/v{{ version }}.tar.gz
-    sha256: {{ sha256 }}
+  url: https://github.com/IAMconsortium/pyam/archive/v{{ version }}.tar.gz
+  sha256: {{ sha256 }}
   
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
