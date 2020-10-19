@@ -5,9 +5,13 @@ Home: https://pyam-iamc.readthedocs.io/
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyam-feedstock/blob/master/LICENSE.txt)
 
 Summary: a Python package for integrated-assessment scenario analysis and visualization
+
+Development: https://github.com/IAMconsortium/pyam
+
+Documentation: https://pyam-iamc.readthedocs.io/
 
 The open-source Python package `pyam` provides a suite of tools and
 functions for analyzing and visualizing input data
