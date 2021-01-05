@@ -25,6 +25,7 @@ requirements:
     - pyyaml
     - matplotlib-base
     - seaborn
+    - plotly
     - six
     - requests
     - iam-units
