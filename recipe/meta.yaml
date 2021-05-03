@@ -45,16 +45,18 @@ about:
   license_file: LICENSE
   summary: a Python package for integrated-assessment scenario analysis and visualization
   description: |
-    The open-source Python package `pyam` provides a suite of tools and
-    functions for analyzing and visualizing input data
-    (i.e., assumptions/parametrization) and results (model output) of
-    integrated-assessment scenarios.
+    The open-source Python package **pyam** provides a suite of tools and functions
+    for analyzing and visualizing input data (i.e., assumptions/parametrization)
+    and results (model output) of integrated-assessment models,
+    macro-energy scenarios, energy systems analysis, and sectoral studies.
 
-    # Key features:
-    - Simple analysis of timeseries data in the IAMC format with an interface
-      similar in feel and style to the widely used pandas.DataFrame
-    - Advanced visualization and plotting function
-    - Diagnostic checks for scripted validation of scenario data and results
+    **Key features**
+
+    - Simple analysis of scenario timeseries data with an interface similar in feel & style
+      to the widely used [pandas.DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html)
+    - Advanced visualization and plotting functions
+      (see the [gallery](https://pyam-iamc.readthedocs.io/en/stable/gallery/index.html))
+    - Scripted validation and processing of scenario data and results
   doc_url: https://pyam-iamc.readthedocs.io/
   dev_url: https://github.com/IAMconsortium/pyam
 
