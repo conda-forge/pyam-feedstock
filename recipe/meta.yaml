@@ -43,7 +43,7 @@ about:
   home: https://pyam-iamc.readthedocs.io/
   license: Apache-2.0
   license_file: LICENSE
-  summary: a Python package for integrated-assessment scenario analysis and visualization
+  summary: Analysis and visualization of integrated-assessment & macro-energy scenarios
   description: |
     The open-source Python package **pyam** provides a suite of tools and functions
     for analyzing and visualizing input data (i.e., assumptions/parametrization)
