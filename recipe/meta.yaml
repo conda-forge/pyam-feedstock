@@ -1,5 +1,5 @@
-{% set version = "0.12.0" %}
-{% set sha256 = "78e40014f031e0b373548da5f16744a7cc07882d39a0274c6361b8dc6ec2fb26" %}
+{% set version = "0.13.0" %}
+{% set sha256 = "ae3e8877c0d759aa501376e140806d32937a94bcef5b1bb5d9cd52c28e451c77" %}
 
 package:
   name: pyam
@@ -22,14 +22,13 @@ requirements:
   run:
     - python >=3.7
     - numpy
-    - pandas
+    - pandas >=1.1
     - pyyaml
-    - matplotlib-base
+    - matplotlib-base >=3.2.0
     - seaborn
-    - plotly
     - six
     - requests
-    - iam-units
+    - iam-units >=2020.4.21
     - xlrd
     - openpyxl
     - datapackage
