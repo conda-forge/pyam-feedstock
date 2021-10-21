@@ -1,12 +1,12 @@
-{% set version = "1.1.0" %}
-{% set sha256 = "a22336b98a307ff40734440bc869d919f82ed2b284e7c8c15ef22ea0ef87bb50" %}
+{% set version = "1.2.0" %}
+{% set sha256 = "befc8da618600dad3c45f1d3b519f90d199d1e8ffd841972cd7434be3f327898" %}
 
 package:
   name: pyam
   version: {{ version }}
 
 source:
-  url: https://github.com/IAMconsortium/pyam/archive/v{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/p/pyam-iamc/pyam-iamc-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 
@@ -19,19 +19,23 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - setuptools-scm
   run:
     - python >=3.7
+    - iam-units >=2020.4.21
+    - datapackage
     - numpy >=1.19.0
+    - requests
+    - openpyxl
     - pandas >=1.1.1
     - pyyaml
     - matplotlib-base >=3.2.0
     - seaborn
     - six
-    - requests
-    - iam-units >=2020.4.21
-    - xlrd
-    - openpyxl
-    - datapackage
+    - xlrd >=2.0
+    - pint >=0.11
+    - setuptools_scm
+    - importlib_metadata
 
 test:
   imports:
