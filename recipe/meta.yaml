@@ -1,12 +1,12 @@
 {% set version = "1.2.0" %}
-{% set sha256 = "5944f45870427cd2ec232c46e72cb74a93c38fd7840e6190e14c289184123f25" %}
+{% set sha256 = "befc8da618600dad3c45f1d3b519f90d199d1e8ffd841972cd7434be3f327898" %}
 
 package:
   name: pyam
   version: {{ version }}
 
 source:
-  url: https://github.com/IAMconsortium/pyam/archive/v{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/pyam-iamc/pyam/pyam-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 
