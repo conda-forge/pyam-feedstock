@@ -33,7 +33,7 @@ requirements:
     - seaborn
     - six
     - xlrd >=2.0
-    - pint >=0.11
+    - pint >=0.11, <0.19
     - setuptools_scm
     - importlib_metadata
 
