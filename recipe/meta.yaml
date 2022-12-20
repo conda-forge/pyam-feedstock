@@ -17,30 +17,30 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.7.1
     - pip
     - setuptools-scm
   run:
-    - python >=3.7
+    - python >=3.7.1
     - iam-units >=2020.4.21
     - datapackage
-    - numpy >=1.19.0
+    - numpy >=1.19.0, <1.24
     - requests
     - openpyxl
     - xlsxwriter
-    - pandas >=1.1.1
+    - pandas >=1.2.0
     - pyyaml
     - matplotlib-base >=3.2.0
     - seaborn
     - six
     - scipy
-    - xlrd >=2.0
     - pint >=0.13
     - setuptools-scm
     - importlib_metadata
     - httpx
     - python-dateutil
     - pyjwt
+    - wquantiles
 
 test:
   imports:
