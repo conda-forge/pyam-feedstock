@@ -1,11 +1,11 @@
-About pyam
-==========
+About pyam-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyam-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pyam-iamc.readthedocs.io/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyam-feedstock/blob/main/LICENSE.txt)
 
 Summary: Analysis and visualization of integrated-assessment & macro-energy scenarios
 

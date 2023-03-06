@@ -1,5 +1,5 @@
-{% set version = "1.7.0" %}
-{% set sha256 = "0af22a23585ed30363e8755a7e2ac4a646df71c5375f57b3a9124fb567cd32e4" %}
+{% set version = "1.8.0" %}
+{% set sha256 = "56962ac35ce9f7aa6a5b426213f6fed613067e21c9286b0aa0e0eae97b9cca80" %}
 
 package:
   name: pyam
@@ -30,7 +30,7 @@ requirements:
     - xlsxwriter
     - pandas >=1.2.0
     - pyyaml
-    - matplotlib-base >=3.2.0
+    - matplotlib-base >=3.5.0, < 3.7.1
     - seaborn
     - six
     - scipy
