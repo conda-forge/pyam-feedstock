@@ -1,5 +1,5 @@
-{% set version = "1.9.0" %}
-{% set sha256 = "a37f853b4e563628e78ff79a639d5636e25cdc2b5db35d13b5ac7c27ccdf6333" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "3d4b9440d819c3f846c32ae5483bbd368ed015c170e50878adf4048d82992556" %}
 
 package:
   name: pyam
@@ -11,7 +11,7 @@ source:
 
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
