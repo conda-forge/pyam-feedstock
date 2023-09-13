@@ -9,7 +9,6 @@ source:
   url: https://pypi.io/packages/source/p/pyam-iamc/pyam-iamc-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
-
 build:
   number: 0
   noarch: python
@@ -26,7 +25,6 @@ requirements:
     - ixmp4 >=0.4.0
     - datapackage
     - numpy >=1.23.0, <1.24
-    - requests
     - openpyxl
     - xlsxwriter
     - pandas >=2.0.0
@@ -37,10 +35,7 @@ requirements:
     - scipy >=1.10
     - pint >=0.13
     - setuptools-scm
-    - importlib_metadata
-    - httpx
     - python-dateutil
-    - pyjwt
     - wquantiles
 
 test:
