@@ -17,23 +17,24 @@ build:
 
 requirements:
   host:
-    - python >=3.7.1, <3.12
+    - python >=3.10, <3.12
     - pip
     - setuptools-scm
   run:
-    - python >=3.7.1, <3.12
+    - python >=3.10, <3.12
     - iam-units >=2020.4.21
+    - ixmp4 >=0.4.0
     - datapackage
-    - numpy >=1.19.0, <1.24
+    - numpy >=1.23.0, <1.24
     - requests
     - openpyxl
     - xlsxwriter
-    - pandas >=1.2.0
+    - pandas >=2.0.0
     - pyyaml
-    - matplotlib-base >=3.5.0, < 3.7.1
-    - seaborn
+    - matplotlib-base >=3.6.0, < 3.7.1
+    - seaborn >=0.11
     - six
-    - scipy
+    - scipy >=1.10
     - pint >=0.13
     - setuptools-scm
     - importlib_metadata
