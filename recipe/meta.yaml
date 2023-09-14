@@ -1,8 +1,9 @@
+{% set name = "pyam-iamc" %}
 {% set version = "2.0.0" %}
 {% set sha256 = "3d4b9440d819c3f846c32ae5483bbd368ed015c170e50878adf4048d82992556" %}
 
 package:
-  name: pyam
+  name: {{ name }}
   version: {{ version }}
 
 source:
@@ -10,38 +11,42 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - python >=3.10, <3.12
-    - pip
+    - python >=3.10,<3.12
     - setuptools-scm
+    - setuptools >=41
+    - pip
   run:
-    - python >=3.10, <3.12
+    - python >=3.10,<3.12
     - iam-units >=2020.4.21
     - ixmp4 >=0.4.0
-    - datapackage
-    - numpy >=1.23.0, <1.24
+    - numpy >=1.23.0,<1.24
+    - pyjwt
     - openpyxl
-    - xlsxwriter
     - pandas >=2.0.0
+    - pint >=0.13
     - pyyaml
-    - matplotlib-base >=3.6.0, < 3.7.1
+    - matplotlib-base >=3.6.0,<3.7.1
+    - scipy >=1.10.0
     - seaborn >=0.11
     - six
-    - scipy >=1.10
-    - pint >=0.13
+    - setuptools >=41
     - setuptools-scm
-    - python-dateutil
     - wquantiles
+    - xlsxwriter
 
 test:
   imports:
     - pyam
-  commands: python -c "import pyam; assert pyam.__version__ == '{{ version }}'"
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://pyam-iamc.readthedocs.io/
