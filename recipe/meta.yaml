@@ -1,13 +1,13 @@
 {% set name = "pyam-iamc" %}
-{% set version = "2.1.0" %}
-{% set sha256 = "ee9d78de18bcf49669c59e0f8683445a504b810ca885d169d9b9b5bcdad11f89" %}
+{% set version = "2.2.0" %}
+{% set sha256 = "c6dfd5468dda296d676852111afe530cdeef0545676d5e4ad344021b7cbd0bc0" %}
 
 package:
   name: pyam
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/p/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
