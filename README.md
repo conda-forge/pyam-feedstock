@@ -7,7 +7,7 @@ Home: https://pyam-iamc.readthedocs.io/
 
 Package license: Apache-2.0
 
-Summary: Analysis and visualization of integrated-assessment & macro-energy scenarios
+Summary: Analysis & visualization of integrated-assessment scenarios
 
 Development: https://github.com/IAMconsortium/pyam
 
