@@ -1,6 +1,6 @@
 {% set name = "pyam-iamc" %}
-{% set version = "2.2.3" %}
-{% set sha256 = "c4ebaf86fdca66fe8fac7dca22674582fc668221bbebb142681be4125ef73cb7" %}
+{% set version = "2.3.0" %}
+{% set sha256 = "ea6f4d9864116d932e03036d0df9337fe7a178172907ffa49c31336dac0f8529" %}
 
 package:
   name: pyam
