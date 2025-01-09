@@ -1,13 +1,14 @@
+{% set python_min = '3.10' %}
 {% set name = "pyam-iamc" %}
-{% set version = "2.3.0" %}
-{% set sha256 = "ea6f4d9864116d932e03036d0df9337fe7a178172907ffa49c31336dac0f8529" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "ef333da4d239e66516ff31801879cac38384e8ebed70fe7705eec77af1305530" %}
 
 package:
   name: pyam
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -17,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.10,<3.13
+    - python {{ python_min }}
     - poetry-core >=1.2.0
     - poetry-dynamic-versioning
     - pip
   run:
-    - python >=3.10,<3.13
+    - python >={{ python_min }},<3.13
     - iam-units >=2020.4.21
     - ixmp4 >=0.9.0
     - matplotlib-base >=3.6.0
@@ -44,6 +45,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pyam-iamc.readthedocs.io/
