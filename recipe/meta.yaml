@@ -23,7 +23,7 @@ requirements:
     - poetry-dynamic-versioning
     - pip
   run:
-    - python >={{ python_min }},<3.13
+    - python >={{ python_min }},<3.14
     - iam-units >=2020.4.21
     - ixmp4 >=0.9.0
     - matplotlib-base >=3.6.0
