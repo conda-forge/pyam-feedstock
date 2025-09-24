@@ -162,5 +162,4 @@ Feedstock Maintainers
 =====================
 
 * [@danielhuppmann](https://github.com/danielhuppmann/)
-* [@gidden](https://github.com/gidden/)
 
