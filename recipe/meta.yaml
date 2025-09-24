@@ -1,7 +1,7 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "pyam-iamc" %}
-{% set version = "3.0.0" %}
-{% set sha256 = "ef333da4d239e66516ff31801879cac38384e8ebed70fe7705eec77af1305530" %}
+{% set version = "3.1.0" %}
+{% set sha256 = "78fb5e510398c66865510dad483d76a8e918adf42685fde52ba16e6843eca385" %}
 
 package:
   name: pyam
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
