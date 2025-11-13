@@ -1,7 +1,7 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "pyam-iamc" %}
-{% set version = "3.0.0" %}
-{% set sha256 = "ef333da4d239e66516ff31801879cac38384e8ebed70fe7705eec77af1305530" %}
+{% set version = "3.2.0" %}
+{% set sha256 = "99f83022947e1c8333c12b1d20efa6690fb5c9d528b6b65091ec825ebf7c952f" %}
 
 package:
   name: pyam
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -25,7 +25,7 @@ requirements:
   run:
     - python >={{ python_min }},<3.14
     - iam-units >=2020.4.21
-    - ixmp4 >=0.9.0
+    - ixmp4 >=0.13.0
     - matplotlib-base >=3.6.0
     - numpy >=1.26.0,<2.0
     - openpyxl >=3.1.2
